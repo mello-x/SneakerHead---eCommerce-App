@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.RegisterActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_registerPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_createAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/createAccount"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp"/>
+
+        <EditText
+            android:id="@+id/ed_firstName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:hint="@string/fistName"
+            android:inputType="text"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ed_lastName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="270dp"
+            android:inputType="text"
+            android:hint="@string/lastName"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ed_emailID"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="340dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/Email"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ed_passwordRegister"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="410dp"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ed_confirmPassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="480dp"
+            android:inputType="textPassword"
+            android:hint="@string/confirmPassword"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_term_and_conditions"
+                android:layout_width="29dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="550dp"
+                tools:checked="false" />
+
+            <TextView
+                android:id="@+id/tv_terms_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/agree"
+                android:layout_marginTop="550dp"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:text="@string/register"
+            android:layout_marginTop="620dp"/>
+
+        <TextView
+            android:id="@+id/tv_loginHere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accountOwn"
+            android:textStyle="italic"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="690dp"/>
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
