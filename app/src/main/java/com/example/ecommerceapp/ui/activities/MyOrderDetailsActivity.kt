@@ -36,7 +36,7 @@ class MyOrderDetailsActivity : BaseActivity() {
         // create a DateFormatter object for displaying date in specified format.
         val formatter = SimpleDateFormat(dateFormat, Locale.getDefault())
 
-        // create a calendar object that will convert the date and time value in milliseconds to date.
+        // create a calendar obj that will convert the date and time value in milliseconds to date.
         val calendar: Calendar = Calendar.getInstance()
         calendar.timeInMillis = orderDetails.order_datetime
 
